@@ -1,4 +1,4 @@
-package com.bubble.epoxytest
+package com.guagua.epoxytest
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

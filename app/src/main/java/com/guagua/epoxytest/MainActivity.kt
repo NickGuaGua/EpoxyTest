@@ -1,8 +1,8 @@
-package com.bubble.epoxytest
+package com.guagua.epoxytest
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.bubble.epoxytest.ui.main.MainFragment
+import com.guagua.epoxytest.ui.main.MainFragment
 
 class MainActivity : AppCompatActivity() {
 

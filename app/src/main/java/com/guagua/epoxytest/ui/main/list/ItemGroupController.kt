@@ -1,10 +1,10 @@
-package com.bubble.epoxytest.ui.main.list
+package com.guagua.epoxytest.ui.main.list
 
 import com.airbnb.epoxy.TypedEpoxyController
-import com.bubble.epoxytest.ui.extension.carousel
-import com.bubble.epoxytest.ui.extension.withModelsFrom
-import com.bubble.epoxytest.view.data.Carousel
-import com.bubble.epoxytest.view.data.ListItem
+import com.guagua.epoxytest.ui.extension.carousel
+import com.guagua.epoxytest.ui.extension.withModelsFrom
+import com.guagua.epoxytest.view.data.Carousel
+import com.guagua.epoxytest.view.data.ListItem
 
 class ItemGroupController : TypedEpoxyController<List<Carousel<ListItem>>>() {
 

@@ -1,8 +1,8 @@
-package com.bubble.epoxytest
+package com.guagua.epoxytest
 
 import android.content.Context
-import com.bubble.epoxytest.model.LocalDataSource
-import com.bubble.epoxytest.model.VideoRepository
+import com.guagua.epoxytest.model.LocalDataSource
+import com.guagua.epoxytest.model.VideoRepository
 
 object InjectUtil {
 

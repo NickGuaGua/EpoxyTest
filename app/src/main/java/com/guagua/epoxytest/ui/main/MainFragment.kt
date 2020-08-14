@@ -1,4 +1,4 @@
-package com.bubble.epoxytest.ui.main
+package com.guagua.epoxytest.ui.main
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,9 +7,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
-import com.bubble.epoxytest.*
-import com.bubble.epoxytest.ui.main.list.ItemGroupController
-import com.bubble.epoxytest.ui.extension.toCarousel
+import com.guagua.epoxytest.*
+import com.guagua.epoxytest.ui.main.list.ItemGroupController
+import com.guagua.epoxytest.ui.extension.toCarousel
 import kotlinx.android.synthetic.main.main_fragment.*
 
 

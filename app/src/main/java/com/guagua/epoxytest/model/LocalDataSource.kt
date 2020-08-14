@@ -1,12 +1,8 @@
-package com.bubble.epoxytest.model
+package com.guagua.epoxytest.model
 
 import android.content.Context
-import com.bubble.epoxytest.model.data.Category
-import com.bubble.epoxytest.model.data.TopPageData
+import com.guagua.epoxytest.model.data.TopPageData
 import com.google.gson.Gson
-import com.google.gson.reflect.TypeToken
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
 import java.io.IOException
 import java.io.InputStream
 import java.nio.charset.Charset

@@ -1,4 +1,4 @@
-package com.bubble.epoxytest.model.data
+package com.guagua.epoxytest.model.data
 
 import com.google.gson.annotations.SerializedName
 

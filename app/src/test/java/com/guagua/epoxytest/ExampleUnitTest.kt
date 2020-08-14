@@ -1,4 +1,4 @@
-package com.bubble.epoxytest
+package com.guagua.epoxytest
 
 import org.junit.Test
 

@@ -1,6 +1,5 @@
-package com.bubble.epoxytest.ui.main.list
+package com.guagua.epoxytest.ui.main.list
 
-import android.util.Log
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
@@ -8,8 +7,8 @@ import com.airbnb.epoxy.EpoxyAttribute
 import com.airbnb.epoxy.EpoxyHolder
 import com.airbnb.epoxy.EpoxyModelClass
 import com.airbnb.epoxy.EpoxyModelWithHolder
-import com.bubble.epoxytest.R
-import com.bubble.epoxytest.view.data.ListItem
+import com.guagua.epoxytest.R
+import com.guagua.epoxytest.view.data.ListItem
 import com.bumptech.glide.Glide
 
 

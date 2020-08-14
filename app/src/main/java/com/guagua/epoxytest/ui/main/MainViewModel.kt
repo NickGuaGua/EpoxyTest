@@ -1,14 +1,11 @@
-package com.bubble.epoxytest.ui.main
+package com.guagua.epoxytest.ui.main
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
-import com.bubble.epoxytest.InjectUtil
-import com.bubble.epoxytest.model.LocalDataSource
-import com.bubble.epoxytest.model.data.Category
-import com.bubble.epoxytest.model.data.TopPageData
+import com.guagua.epoxytest.InjectUtil
+import com.guagua.epoxytest.model.data.TopPageData
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.MainScope
 import kotlinx.coroutines.launch

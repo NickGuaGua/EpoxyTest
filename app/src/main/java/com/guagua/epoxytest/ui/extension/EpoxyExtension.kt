@@ -1,4 +1,4 @@
-package com.bubble.epoxytest.ui.extension
+package com.guagua.epoxytest.ui.extension
 
 import com.airbnb.epoxy.CarouselModelBuilder
 import com.airbnb.epoxy.CarouselModel_
