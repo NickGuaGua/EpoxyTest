@@ -3,6 +3,10 @@ package com.guagua.epoxytest.model
 import android.content.Context
 import com.guagua.epoxytest.model.data.TopPageData
 import com.google.gson.Gson
+import com.guagua.epoxytest.MyApplication
+import dagger.hilt.EntryPoint
+import dagger.hilt.InstallIn
+import dagger.hilt.android.components.ApplicationComponent
 import java.io.IOException
 import java.io.InputStream
 import java.nio.charset.Charset
@@ -10,13 +14,13 @@ import kotlin.coroutines.resume
 import kotlin.coroutines.suspendCoroutine
 
 
-class LocalDataSource(context: Context): VideoDataSource {
+class LocalDataSource: VideoDataSource {
 
     companion object {
         private const val TOP_PAGE_JSON_FILE = "top_page.json"
     }
 
-    private val assetManager = context.assets
+    private val assetManager = MyApplication.appContext.assets
 
     private val gson = Gson()
 

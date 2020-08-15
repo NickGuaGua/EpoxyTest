@@ -10,14 +10,11 @@ import androidx.lifecycle.Observer
 import com.guagua.epoxytest.*
 import com.guagua.epoxytest.ui.main.list.ItemGroupController
 import com.guagua.epoxytest.ui.extension.toCarousel
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.main_fragment.*
 
-
+@AndroidEntryPoint
 class MainFragment : Fragment() {
-
-    companion object {
-        fun newInstance() = MainFragment()
-    }
 
     private val viewModel by viewModels<MainViewModel>()
 
