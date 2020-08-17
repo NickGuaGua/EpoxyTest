@@ -1,9 +1,8 @@
-{
-  "category": [
-    {
-      "id": "1",
-      "title": "熱門影片",
-      "series": [
+[
+  {
+    "id": "1",
+    "title": "熱門影片",
+    "series": [
         {
           "id": "1",
           "title": "鬼滅之刃",
@@ -35,186 +34,185 @@
           "photo": "https://upload.wikimedia.org/wikipedia/zh/thumb/6/6c/%E9%80%B2%E6%92%83%E3%81%AE%E5%B7%A8%E4%BA%BA_0.jpg/220px-%E9%80%B2%E6%92%83%E3%81%AE%E5%B7%A8%E4%BA%BA_0.jpg"
         }
       ]
-    },
-    {
-      "id": "2",
-      "title": "最新上架",
-      "series": [
-        {
-          "id": "1",
-          "title": "鬼滅之刃",
-          "photo": "https://img.linetv.tw/large/drama/10441-p.jpg"
-        },
-        {
-          "id": "2",
-          "title": "海賊王",
-          "photo": "https://assets.juksy.com/files/articles/94193/800x_100_w-5d71c106e738c.jpg"
-        },
-        {
-          "id": "3",
-          "title": "Re：從零開始的異世界生活",
-          "photo": "https://kbimages1-a.akamaihd.net/50fe5237-57aa-4699-969a-119ceec8012c/1200/1200/False/re-14-1.jpg"
-        },
-        {
-          "id": "4",
-          "title": "我的英雄學院",
-          "photo": "https://ticket.lunacinemax.com.tw/filedata.php?table=ticket&filed=pic_big&sn=6716"
-        },
-        {
-          "id": "5",
-          "title": "刀劍神域",
-          "photo": "https://s.yimg.com/ny/api/res/1.2/9d8LbvY1X4MYJThCa4R59Q--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9NTEwO2g9NzIx/https://media.zenfs.com/zh-tw/setn.com.tw/49342de91c13b2bc7e2cef3e411ea176"
-        },
-        {
-          "id": "6",
-          "title": "進擊的巨人",
-          "photo": "https://upload.wikimedia.org/wikipedia/zh/thumb/6/6c/%E9%80%B2%E6%92%83%E3%81%AE%E5%B7%A8%E4%BA%BA_0.jpg/220px-%E9%80%B2%E6%92%83%E3%81%AE%E5%B7%A8%E4%BA%BA_0.jpg"
-        }
-      ]
-    },
-    {
-      "id": "3",
-      "title": "編輯精選",
-      "series": [
-        {
-          "id": "1",
-          "title": "鬼滅之刃",
-          "photo": "https://img.linetv.tw/large/drama/10441-p.jpg"
-        },
-        {
-          "id": "2",
-          "title": "海賊王",
-          "photo": "https://assets.juksy.com/files/articles/94193/800x_100_w-5d71c106e738c.jpg"
-        },
-        {
-          "id": "3",
-          "title": "Re：從零開始的異世界生活",
-          "photo": "https://kbimages1-a.akamaihd.net/50fe5237-57aa-4699-969a-119ceec8012c/1200/1200/False/re-14-1.jpg"
-        },
-        {
-          "id": "4",
-          "title": "我的英雄學院",
-          "photo": "https://ticket.lunacinemax.com.tw/filedata.php?table=ticket&filed=pic_big&sn=6716"
-        },
-        {
-          "id": "5",
-          "title": "刀劍神域",
-          "photo": "https://s.yimg.com/ny/api/res/1.2/9d8LbvY1X4MYJThCa4R59Q--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9NTEwO2g9NzIx/https://media.zenfs.com/zh-tw/setn.com.tw/49342de91c13b2bc7e2cef3e411ea176"
-        },
-        {
-          "id": "6",
-          "title": "進擊的巨人",
-          "photo": "https://upload.wikimedia.org/wikipedia/zh/thumb/6/6c/%E9%80%B2%E6%92%83%E3%81%AE%E5%B7%A8%E4%BA%BA_0.jpg/220px-%E9%80%B2%E6%92%83%E3%81%AE%E5%B7%A8%E4%BA%BA_0.jpg"
-        }
-      ]
-    },
-    {
-      "id": "4",
-      "title": "小編推薦",
-      "series": [
-        {
-          "id": "1",
-          "title": "鬼滅之刃",
-          "photo": "https://img.linetv.tw/large/drama/10441-p.jpg"
-        },
-        {
-          "id": "2",
-          "title": "海賊王",
-          "photo": "https://assets.juksy.com/files/articles/94193/800x_100_w-5d71c106e738c.jpg"
-        },
-        {
-          "id": "3",
-          "title": "Re：從零開始的異世界生活",
-          "photo": "https://kbimages1-a.akamaihd.net/50fe5237-57aa-4699-969a-119ceec8012c/1200/1200/False/re-14-1.jpg"
-        },
-        {
-          "id": "4",
-          "title": "我的英雄學院",
-          "photo": "https://ticket.lunacinemax.com.tw/filedata.php?table=ticket&filed=pic_big&sn=6716"
-        },
-        {
-          "id": "5",
-          "title": "刀劍神域",
-          "photo": "https://s.yimg.com/ny/api/res/1.2/9d8LbvY1X4MYJThCa4R59Q--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9NTEwO2g9NzIx/https://media.zenfs.com/zh-tw/setn.com.tw/49342de91c13b2bc7e2cef3e411ea176"
-        },
-        {
-          "id": "6",
-          "title": "進擊的巨人",
-          "photo": "https://upload.wikimedia.org/wikipedia/zh/thumb/6/6c/%E9%80%B2%E6%92%83%E3%81%AE%E5%B7%A8%E4%BA%BA_0.jpg/220px-%E9%80%B2%E6%92%83%E3%81%AE%E5%B7%A8%E4%BA%BA_0.jpg"
-        }
-      ]
-    },
-    {
-      "id": "5",
-      "title": "其他人正在看",
-      "series": [
-        {
-          "id": "1",
-          "title": "鬼滅之刃",
-          "photo": "https://img.linetv.tw/large/drama/10441-p.jpg"
-        },
-        {
-          "id": "2",
-          "title": "海賊王",
-          "photo": "https://assets.juksy.com/files/articles/94193/800x_100_w-5d71c106e738c.jpg"
-        },
-        {
-          "id": "3",
-          "title": "Re：從零開始的異世界生活",
-          "photo": "https://kbimages1-a.akamaihd.net/50fe5237-57aa-4699-969a-119ceec8012c/1200/1200/False/re-14-1.jpg"
-        },
-        {
-          "id": "4",
-          "title": "我的英雄學院",
-          "photo": "https://ticket.lunacinemax.com.tw/filedata.php?table=ticket&filed=pic_big&sn=6716"
-        },
-        {
-          "id": "5",
-          "title": "刀劍神域",
-          "photo": "https://s.yimg.com/ny/api/res/1.2/9d8LbvY1X4MYJThCa4R59Q--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9NTEwO2g9NzIx/https://media.zenfs.com/zh-tw/setn.com.tw/49342de91c13b2bc7e2cef3e411ea176"
-        },
-        {
-          "id": "6",
-          "title": "進擊的巨人",
-          "photo": "https://upload.wikimedia.org/wikipedia/zh/thumb/6/6c/%E9%80%B2%E6%92%83%E3%81%AE%E5%B7%A8%E4%BA%BA_0.jpg/220px-%E9%80%B2%E6%92%83%E3%81%AE%E5%B7%A8%E4%BA%BA_0.jpg"
-        }
-      ]
-    },
-    {
-      "id": "6",
-      "title": "想不到了啦",
-      "series": [
-        {
-          "id": "1",
-          "title": "鬼滅之刃",
-          "photo": "https://img.linetv.tw/large/drama/10441-p.jpg"
-        },
-        {
-          "id": "2",
-          "title": "海賊王",
-          "photo": "https://assets.juksy.com/files/articles/94193/800x_100_w-5d71c106e738c.jpg"
-        },
-        {
-          "id": "3",
-          "title": "Re：從零開始的異世界生活",
-          "photo": "https://kbimages1-a.akamaihd.net/50fe5237-57aa-4699-969a-119ceec8012c/1200/1200/False/re-14-1.jpg"
-        },
-        {
-          "id": "4",
-          "title": "我的英雄學院",
-          "photo": "https://ticket.lunacinemax.com.tw/filedata.php?table=ticket&filed=pic_big&sn=6716"
-        },
-        {
-          "id": "5",
-          "title": "刀劍神域",
-          "photo": "https://s.yimg.com/ny/api/res/1.2/9d8LbvY1X4MYJThCa4R59Q--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9NTEwO2g9NzIx/https://media.zenfs.com/zh-tw/setn.com.tw/49342de91c13b2bc7e2cef3e411ea176"
-        },
-        {
-          "id": "6",
-          "title": "進擊的巨人",
-          "photo": "https://upload.wikimedia.org/wikipedia/zh/thumb/6/6c/%E9%80%B2%E6%92%83%E3%81%AE%E5%B7%A8%E4%BA%BA_0.jpg/220px-%E9%80%B2%E6%92%83%E3%81%AE%E5%B7%A8%E4%BA%BA_0.jpg"
-        }
-      ]
-    }
-  ]
-}
+  },
+  {
+    "id": "2",
+    "title": "最新上架",
+    "series": [
+      {
+        "id": "1",
+        "title": "鬼滅之刃",
+        "photo": "https://img.linetv.tw/large/drama/10441-p.jpg"
+      },
+      {
+        "id": "2",
+        "title": "海賊王",
+        "photo": "https://assets.juksy.com/files/articles/94193/800x_100_w-5d71c106e738c.jpg"
+      },
+      {
+        "id": "3",
+        "title": "Re：從零開始的異世界生活",
+        "photo": "https://kbimages1-a.akamaihd.net/50fe5237-57aa-4699-969a-119ceec8012c/1200/1200/False/re-14-1.jpg"
+      },
+      {
+        "id": "4",
+        "title": "我的英雄學院",
+        "photo": "https://ticket.lunacinemax.com.tw/filedata.php?table=ticket&filed=pic_big&sn=6716"
+      },
+      {
+        "id": "5",
+        "title": "刀劍神域",
+        "photo": "https://s.yimg.com/ny/api/res/1.2/9d8LbvY1X4MYJThCa4R59Q--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9NTEwO2g9NzIx/https://media.zenfs.com/zh-tw/setn.com.tw/49342de91c13b2bc7e2cef3e411ea176"
+      },
+      {
+        "id": "6",
+        "title": "進擊的巨人",
+        "photo": "https://upload.wikimedia.org/wikipedia/zh/thumb/6/6c/%E9%80%B2%E6%92%83%E3%81%AE%E5%B7%A8%E4%BA%BA_0.jpg/220px-%E9%80%B2%E6%92%83%E3%81%AE%E5%B7%A8%E4%BA%BA_0.jpg"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "title": "編輯精選",
+    "series": [
+      {
+        "id": "1",
+        "title": "鬼滅之刃",
+        "photo": "https://img.linetv.tw/large/drama/10441-p.jpg"
+      },
+      {
+        "id": "2",
+        "title": "海賊王",
+        "photo": "https://assets.juksy.com/files/articles/94193/800x_100_w-5d71c106e738c.jpg"
+      },
+      {
+        "id": "3",
+        "title": "Re：從零開始的異世界生活",
+        "photo": "https://kbimages1-a.akamaihd.net/50fe5237-57aa-4699-969a-119ceec8012c/1200/1200/False/re-14-1.jpg"
+      },
+      {
+        "id": "4",
+        "title": "我的英雄學院",
+        "photo": "https://ticket.lunacinemax.com.tw/filedata.php?table=ticket&filed=pic_big&sn=6716"
+      },
+      {
+        "id": "5",
+        "title": "刀劍神域",
+        "photo": "https://s.yimg.com/ny/api/res/1.2/9d8LbvY1X4MYJThCa4R59Q--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9NTEwO2g9NzIx/https://media.zenfs.com/zh-tw/setn.com.tw/49342de91c13b2bc7e2cef3e411ea176"
+      },
+      {
+        "id": "6",
+        "title": "進擊的巨人",
+        "photo": "https://upload.wikimedia.org/wikipedia/zh/thumb/6/6c/%E9%80%B2%E6%92%83%E3%81%AE%E5%B7%A8%E4%BA%BA_0.jpg/220px-%E9%80%B2%E6%92%83%E3%81%AE%E5%B7%A8%E4%BA%BA_0.jpg"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "title": "小編推薦",
+    "series": [
+      {
+        "id": "1",
+        "title": "鬼滅之刃",
+        "photo": "https://img.linetv.tw/large/drama/10441-p.jpg"
+      },
+      {
+        "id": "2",
+        "title": "海賊王",
+        "photo": "https://assets.juksy.com/files/articles/94193/800x_100_w-5d71c106e738c.jpg"
+      },
+      {
+        "id": "3",
+        "title": "Re：從零開始的異世界生活",
+        "photo": "https://kbimages1-a.akamaihd.net/50fe5237-57aa-4699-969a-119ceec8012c/1200/1200/False/re-14-1.jpg"
+      },
+      {
+        "id": "4",
+        "title": "我的英雄學院",
+        "photo": "https://ticket.lunacinemax.com.tw/filedata.php?table=ticket&filed=pic_big&sn=6716"
+      },
+      {
+        "id": "5",
+        "title": "刀劍神域",
+        "photo": "https://s.yimg.com/ny/api/res/1.2/9d8LbvY1X4MYJThCa4R59Q--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9NTEwO2g9NzIx/https://media.zenfs.com/zh-tw/setn.com.tw/49342de91c13b2bc7e2cef3e411ea176"
+      },
+      {
+        "id": "6",
+        "title": "進擊的巨人",
+        "photo": "https://upload.wikimedia.org/wikipedia/zh/thumb/6/6c/%E9%80%B2%E6%92%83%E3%81%AE%E5%B7%A8%E4%BA%BA_0.jpg/220px-%E9%80%B2%E6%92%83%E3%81%AE%E5%B7%A8%E4%BA%BA_0.jpg"
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "title": "其他人正在看",
+    "series": [
+      {
+        "id": "1",
+        "title": "鬼滅之刃",
+        "photo": "https://img.linetv.tw/large/drama/10441-p.jpg"
+      },
+      {
+        "id": "2",
+        "title": "海賊王",
+        "photo": "https://assets.juksy.com/files/articles/94193/800x_100_w-5d71c106e738c.jpg"
+      },
+      {
+        "id": "3",
+        "title": "Re：從零開始的異世界生活",
+        "photo": "https://kbimages1-a.akamaihd.net/50fe5237-57aa-4699-969a-119ceec8012c/1200/1200/False/re-14-1.jpg"
+      },
+      {
+        "id": "4",
+        "title": "我的英雄學院",
+        "photo": "https://ticket.lunacinemax.com.tw/filedata.php?table=ticket&filed=pic_big&sn=6716"
+      },
+      {
+        "id": "5",
+        "title": "刀劍神域",
+        "photo": "https://s.yimg.com/ny/api/res/1.2/9d8LbvY1X4MYJThCa4R59Q--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9NTEwO2g9NzIx/https://media.zenfs.com/zh-tw/setn.com.tw/49342de91c13b2bc7e2cef3e411ea176"
+      },
+      {
+        "id": "6",
+        "title": "進擊的巨人",
+        "photo": "https://upload.wikimedia.org/wikipedia/zh/thumb/6/6c/%E9%80%B2%E6%92%83%E3%81%AE%E5%B7%A8%E4%BA%BA_0.jpg/220px-%E9%80%B2%E6%92%83%E3%81%AE%E5%B7%A8%E4%BA%BA_0.jpg"
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "title": "想不到了啦",
+    "series": [
+      {
+        "id": "1",
+        "title": "鬼滅之刃",
+        "photo": "https://img.linetv.tw/large/drama/10441-p.jpg"
+      },
+      {
+        "id": "2",
+        "title": "海賊王",
+        "photo": "https://assets.juksy.com/files/articles/94193/800x_100_w-5d71c106e738c.jpg"
+      },
+      {
+        "id": "3",
+        "title": "Re：從零開始的異世界生活",
+        "photo": "https://kbimages1-a.akamaihd.net/50fe5237-57aa-4699-969a-119ceec8012c/1200/1200/False/re-14-1.jpg"
+      },
+      {
+        "id": "4",
+        "title": "我的英雄學院",
+        "photo": "https://ticket.lunacinemax.com.tw/filedata.php?table=ticket&filed=pic_big&sn=6716"
+      },
+      {
+        "id": "5",
+        "title": "刀劍神域",
+        "photo": "https://s.yimg.com/ny/api/res/1.2/9d8LbvY1X4MYJThCa4R59Q--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9NTEwO2g9NzIx/https://media.zenfs.com/zh-tw/setn.com.tw/49342de91c13b2bc7e2cef3e411ea176"
+      },
+      {
+        "id": "6",
+        "title": "進擊的巨人",
+        "photo": "https://upload.wikimedia.org/wikipedia/zh/thumb/6/6c/%E9%80%B2%E6%92%83%E3%81%AE%E5%B7%A8%E4%BA%BA_0.jpg/220px-%E9%80%B2%E6%92%83%E3%81%AE%E5%B7%A8%E4%BA%BA_0.jpg"
+      }
+    ]
+  }
+]

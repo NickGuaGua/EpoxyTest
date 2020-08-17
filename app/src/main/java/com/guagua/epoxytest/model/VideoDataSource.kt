@@ -1,7 +1,7 @@
 package com.guagua.epoxytest.model
 
-import com.guagua.epoxytest.model.data.TopPageData
+import com.guagua.epoxytest.model.data.Category
 
 interface VideoDataSource {
-    suspend fun getTopPage(): TopPageData?
+    suspend fun getCategories(): List<Category>?
 }

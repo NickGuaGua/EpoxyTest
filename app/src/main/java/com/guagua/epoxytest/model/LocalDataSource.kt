@@ -1,12 +1,9 @@
 package com.guagua.epoxytest.model
 
-import android.content.Context
-import com.guagua.epoxytest.model.data.TopPageData
 import com.google.gson.Gson
+import com.google.gson.reflect.TypeToken
 import com.guagua.epoxytest.MyApplication
-import dagger.hilt.EntryPoint
-import dagger.hilt.InstallIn
-import dagger.hilt.android.components.ApplicationComponent
+import com.guagua.epoxytest.model.data.Category
 import java.io.IOException
 import java.io.InputStream
 import java.nio.charset.Charset
@@ -24,9 +21,10 @@ class LocalDataSource: VideoDataSource {
 
     private val gson = Gson()
 
-    override suspend fun getTopPage(): TopPageData? = suspendCoroutine {
+    override suspend fun getCategories(): List<Category>? = suspendCoroutine {
         loadJsonFile(TOP_PAGE_JSON_FILE)?.let { jsonString ->
-            it.resumeWith(Result.success(gson.fromJson(jsonString, TopPageData::class.java)))
+            val listType = object : TypeToken<ArrayList<Category>?>() {}.type
+            it.resumeWith(Result.success(gson.fromJson(jsonString, listType)))
         } ?: run {
             it.resume(null)
         }

@@ -33,7 +33,7 @@ class MainFragment : Fragment() {
         viewModel.categories.observe(viewLifecycleOwner, Observer {
             it ?: return@Observer
 
-            itemGroupController.setData(it.categories.map { category ->
+            itemGroupController.setData(it.map { category ->
                 category.toCarousel()
             })
         })

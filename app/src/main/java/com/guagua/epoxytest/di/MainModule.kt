@@ -1,17 +1,17 @@
 package com.guagua.epoxytest.di
 
-import android.content.Context
 import com.guagua.epoxytest.model.LocalDataSource
+import com.guagua.epoxytest.model.RemoteDataSource
 import com.guagua.epoxytest.model.VideoDataSource
 import com.guagua.epoxytest.model.VideoRepository
+import com.guagua.epoxytest.model.service.VideoService
 import com.guagua.epoxytest.ui.main.MainFragment
-import dagger.Binds
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.components.ActivityComponent
-import dagger.hilt.android.qualifiers.ApplicationContext
-import javax.sql.DataSource
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
 
 @Module
 @InstallIn(ActivityComponent::class)
@@ -27,7 +27,29 @@ object MainModule {
     }
 
     @Provides
-    fun provideVideoRepository(@VideoLocalDataSource dataSource: VideoDataSource): VideoRepository {
-        return VideoRepository(dataSource)
+    @VideoRemoteDataSource
+    fun provideVideoRemoteDataSource(service: VideoService): VideoDataSource {
+        return RemoteDataSource(service)
+    }
+
+    @Provides
+    fun provideVideoService(retrofit: Retrofit): VideoService {
+        return retrofit.create(VideoService::class.java)
+    }
+
+    @Provides
+    fun provideVideoRepository(
+        @VideoLocalDataSource localDataSource: VideoDataSource,
+        @VideoRemoteDataSource remoteDataSource: VideoDataSource
+    ): VideoRepository {
+        return VideoRepository(localDataSource, remoteDataSource)
+    }
+
+    @Provides
+    fun provideRetrofit(): Retrofit {
+        return Retrofit.Builder()
+            .baseUrl("https://5f38dd7841c94900169bffa2.mockapi.io")
+            .addConverterFactory(GsonConverterFactory.create())
+            .build()
     }
 }
