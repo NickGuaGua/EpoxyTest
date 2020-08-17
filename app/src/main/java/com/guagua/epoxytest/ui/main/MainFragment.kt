@@ -12,13 +12,15 @@ import com.guagua.epoxytest.ui.main.list.ItemGroupController
 import com.guagua.epoxytest.ui.extension.toCarousel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.main_fragment.*
+import javax.inject.Inject
 
 @AndroidEntryPoint
 class MainFragment : Fragment() {
 
     private val viewModel by viewModels<MainViewModel>()
 
-    private val itemGroupController = ItemGroupController()
+    @Inject
+    lateinit var itemGroupController: ItemGroupController
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View {
