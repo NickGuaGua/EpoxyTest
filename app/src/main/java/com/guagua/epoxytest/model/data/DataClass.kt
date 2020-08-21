@@ -5,7 +5,8 @@ import com.google.gson.annotations.SerializedName
 data class Category(
     @SerializedName("id") val id: Int,
     @SerializedName("title") val title: String,
-    @SerializedName("series") var videos: List<Video>)
+    @SerializedName("series") var videos: List<Video>? = listOf()
+)
 
 data class Video(
     @SerializedName("id") val id: Int,

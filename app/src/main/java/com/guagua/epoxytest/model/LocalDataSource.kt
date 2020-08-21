@@ -4,6 +4,9 @@ import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import com.guagua.epoxytest.MyApplication
 import com.guagua.epoxytest.model.data.Category
+import com.guagua.epoxytest.model.data.Video
+import io.reactivex.rxjava3.core.Single
+import retrofit2.Response
 import java.io.IOException
 import java.io.InputStream
 import java.nio.charset.Charset
@@ -28,6 +31,14 @@ class LocalDataSource: VideoDataSource {
         } ?: run {
             it.resume(null)
         }
+    }
+
+    override fun getCategoriesObservable(): Single<Response<List<Category>>> {
+        return Single.just(Response.success(listOf(Category(1, "", listOf()))))
+    }
+
+    override fun getVideosObservable(id: String): Single<Response<List<Video>>> {
+        return Single.just(Response.success(listOf(Video(1, "", ""))))
     }
 
     private fun loadJsonFile(file: String): String? {

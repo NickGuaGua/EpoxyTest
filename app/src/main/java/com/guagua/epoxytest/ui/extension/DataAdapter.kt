@@ -7,7 +7,7 @@ import com.guagua.epoxytest.view.data.ListItem
 
 
 fun Category.toCarousel(): Carousel<ListItem> {
-    return Carousel(id.toString(), title, videos.map { it.toListItem() })
+    return Carousel(id.toString(), title, videos?.map { it.toListItem() } ?: listOf())
 }
 
 fun Video.toListItem(): ListItem {

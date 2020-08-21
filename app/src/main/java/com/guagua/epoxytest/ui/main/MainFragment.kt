@@ -7,9 +7,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
-import com.guagua.epoxytest.*
-import com.guagua.epoxytest.ui.main.list.ItemGroupController
+import com.guagua.epoxytest.R
 import com.guagua.epoxytest.ui.extension.toCarousel
+import com.guagua.epoxytest.ui.main.list.ItemGroupController
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.main_fragment.*
 import javax.inject.Inject
@@ -43,6 +43,6 @@ class MainFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel.fetchTopPage()
+        viewModel.fetchCategories()
     }
 }

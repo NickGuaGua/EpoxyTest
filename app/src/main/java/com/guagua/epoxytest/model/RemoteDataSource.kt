@@ -1,14 +1,8 @@
 package com.guagua.epoxytest.model
 
-import com.google.gson.Gson
-import com.guagua.epoxytest.MyApplication
 import com.guagua.epoxytest.model.data.Category
 import com.guagua.epoxytest.model.data.Video
 import com.guagua.epoxytest.model.service.VideoService
-import dagger.hilt.EntryPoint
-import dagger.hilt.InstallIn
-import dagger.hilt.android.EntryPointAccessors
-import dagger.hilt.android.components.ApplicationComponent
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import retrofit2.Call
@@ -59,4 +53,8 @@ class RemoteDataSource(private val service: VideoService): VideoDataSource {
             }
         })
     }
+
+    override fun getCategoriesObservable() = service.getCategoriesSingle()
+
+    override fun getVideosObservable(id: String) = service.getVideosSingle(id)
 }
