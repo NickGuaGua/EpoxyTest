@@ -7,21 +7,21 @@ import com.airbnb.epoxy.EpoxyAttribute
 import com.airbnb.epoxy.EpoxyHolder
 import com.airbnb.epoxy.EpoxyModelClass
 import com.airbnb.epoxy.EpoxyModelWithHolder
+import com.bumptech.glide.Glide
 import com.guagua.epoxytest.R
 import com.guagua.epoxytest.view.data.ListItem
-import com.bumptech.glide.Glide
 
 
-@EpoxyModelClass(layout = R.layout.view_line_item)
+@EpoxyModelClass(layout = R.layout.view_list_item)
 abstract class ListItemModel : EpoxyModelWithHolder<ListItemModel.Holder>() {
 
     @EpoxyAttribute
-    lateinit var lineItem: ListItem
+    lateinit var listItem: ListItem
 
     override fun bind(holder: Holder) {
         super.bind(holder)
-        holder.title.text = lineItem.title
-        Glide.with(holder.contentView.context).load(lineItem.photo).into(holder.photo)
+        holder.title.text = listItem.title
+        Glide.with(holder.contentView.context).load(listItem.photo).into(holder.photo)
     }
 
     override fun shouldSaveViewState(): Boolean = true

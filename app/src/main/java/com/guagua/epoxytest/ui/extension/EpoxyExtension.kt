@@ -21,7 +21,7 @@ inline fun EpoxyController.carousel(modelInitializer: CarouselModelBuilder.() ->
  */
 inline fun <T> CarouselModelBuilder.withModelsFrom(
     items: List<T>,
-    modelBuilder: (T) -> EpoxyModel<*>
+    modelBuilder: (Int, T) -> EpoxyModel<*>
 ) {
-    models(items.map { modelBuilder(it) })
+    models(items.mapIndexed { index, t -> modelBuilder(index, t) })
 }

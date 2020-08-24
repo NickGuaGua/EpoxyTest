@@ -16,10 +16,16 @@ class ItemGroupController : TypedEpoxyController<List<Carousel<ListItem>>>() {
             }
             carousel {
                 id("${it.id}_carousel")
-                withModelsFrom(it.items) {
-                    ListItemModel_()
-                        .id(it.id)
-                        .lineItem(it)
+                paddingDp(16)
+                withModelsFrom(it.items) { index, item ->
+                    when {
+                        index % 2 == 0 -> ListItemModel_()
+                            .id(item.id)
+                            .listItem(item)
+                        else -> ListItemModelViewModel_()
+                            .id(item.id)
+                            .listItem(item)
+                    }
                 }
             }
         }
