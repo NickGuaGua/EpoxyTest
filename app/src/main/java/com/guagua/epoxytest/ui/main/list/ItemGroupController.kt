@@ -6,7 +6,13 @@ import com.guagua.epoxytest.ui.extension.withModelsFrom
 import com.guagua.epoxytest.view.data.Carousel
 import com.guagua.epoxytest.view.data.ListItem
 
-class ItemGroupController : TypedEpoxyController<List<Carousel<ListItem>>>() {
+class ItemGroupController(
+    private val callbacks: AdapterCallbacks
+) : TypedEpoxyController<List<Carousel<ListItem>>>() {
+
+    interface AdapterCallbacks {
+        fun onListItemClick(item: ListItem)
+    }
 
     override fun buildModels(data: List<Carousel<ListItem>>?) {
         data?.forEach {
@@ -22,9 +28,15 @@ class ItemGroupController : TypedEpoxyController<List<Carousel<ListItem>>>() {
                         index % 2 == 0 -> ListItemModel_()
                             .id(item.id)
                             .listItem(item)
+                            .clickListener { model, _, _, _ ->
+                                callbacks.onListItemClick(model.listItem())
+                            }
                         else -> ListItemModelViewModel_()
                             .id(item.id)
                             .listItem(item)
+                            .onClickListener { model, _, _, _ ->
+                                callbacks.onListItemClick(model.listItem())
+                            }
                     }
                 }
             }

@@ -32,4 +32,9 @@ class ListItemModelView : FrameLayout {
         title.text = item.title
         Glide.with(context).load(item.photo).into(photo)
     }
+
+    @ModelProp(ModelProp.Option.DoNotHash)
+    override fun setOnClickListener(l: OnClickListener?) {
+        super.setOnClickListener(l)
+    }
 }

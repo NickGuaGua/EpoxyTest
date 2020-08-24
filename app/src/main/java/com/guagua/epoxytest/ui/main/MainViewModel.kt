@@ -9,15 +9,19 @@ import androidx.lifecycle.MutableLiveData
 import com.guagua.epoxytest.model.VideoRepository
 import com.guagua.epoxytest.model.data.Category
 import com.guagua.epoxytest.ui.extension.getSuccessBody
+import com.guagua.epoxytest.ui.main.list.ItemGroupController
+import com.guagua.epoxytest.view.data.ListItem
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
 import io.reactivex.rxjava3.schedulers.Schedulers
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.MainScope
+import javax.inject.Inject
 
-class MainViewModel @ViewModelInject constructor(
+class MainViewModel @ViewModelInject @Inject constructor(
     application: Application,
     private val repository: VideoRepository
-) : AndroidViewModel(application), CoroutineScope by MainScope() {
+) : AndroidViewModel(application), ItemGroupController.AdapterCallbacks,
+    CoroutineScope by MainScope() {
 
     private val _categories = MutableLiveData<List<Category>>()
     val categories: LiveData<List<Category>> = _categories
@@ -46,5 +50,9 @@ class MainViewModel @ViewModelInject constructor(
                 // Show categories title first.
                 _categories.postValue(it.body())
             }, {})
+    }
+
+    override fun onListItemClick(item: ListItem) {
+        Log.d("Nick", "on item click: $item")
     }
 }

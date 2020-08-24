@@ -18,10 +18,14 @@ abstract class ListItemModel : EpoxyModelWithHolder<ListItemModel.Holder>() {
     @EpoxyAttribute
     lateinit var listItem: ListItem
 
+    @EpoxyAttribute(EpoxyAttribute.Option.DoNotHash)
+    var clickListener: View.OnClickListener? = null
+
     override fun bind(holder: Holder) {
         super.bind(holder)
         holder.title.text = listItem.title
         Glide.with(holder.contentView.context).load(listItem.photo).into(holder.photo)
+        holder.contentView.setOnClickListener(clickListener)
     }
 
     override fun shouldSaveViewState(): Boolean = true
