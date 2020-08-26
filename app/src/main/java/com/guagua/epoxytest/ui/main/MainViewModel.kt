@@ -10,17 +10,17 @@ import com.guagua.epoxytest.model.VideoRepository
 import com.guagua.epoxytest.model.data.Category
 import com.guagua.epoxytest.ui.extension.getSuccessBody
 import com.guagua.epoxytest.ui.main.list.ItemGroupController
+import com.guagua.epoxytest.ui.scheduler.SchedulerProvider
 import com.guagua.epoxytest.view.data.ListItem
-import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
 import io.reactivex.rxjava3.core.Observable
 import io.reactivex.rxjava3.disposables.CompositeDisposable
 import io.reactivex.rxjava3.disposables.Disposable
-import io.reactivex.rxjava3.schedulers.Schedulers
 import javax.inject.Inject
 
 class MainViewModel @ViewModelInject @Inject constructor(
     application: Application,
-    private val repository: VideoRepository
+    private val repository: VideoRepository,
+    private val schedulerProvider: SchedulerProvider
 ) : AndroidViewModel(application), ItemGroupController.AdapterCallbacks {
 
     private val _categories = MutableLiveData<List<Category>>()
@@ -30,7 +30,7 @@ class MainViewModel @ViewModelInject @Inject constructor(
 
     fun fetchCategories() = async {
         repository.getCategoriesObservable()
-            .subscribeOn(Schedulers.io())
+            .subscribeOn(schedulerProvider.io())
             .flatMapObservable {
                 val categories = it.getSuccessBody() ?: listOf()
                 _categories.postValue(categories) // Update categories title first
@@ -45,7 +45,7 @@ class MainViewModel @ViewModelInject @Inject constructor(
                     }
             }
             .toList()
-            .observeOn(AndroidSchedulers.mainThread())
+            .observeOn(schedulerProvider.main())
             .subscribe({
                 _categories.postValue(it)
             }, {})
@@ -58,6 +58,10 @@ class MainViewModel @ViewModelInject @Inject constructor(
     override fun onCleared() {
         super.onCleared()
         compositeDisposable.dispose()
+    }
+
+    fun test() {
+        _categories.value = listOf(Category(2, ""))
     }
 
     private fun async(disposable: () -> Disposable) {

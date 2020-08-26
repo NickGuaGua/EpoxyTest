@@ -5,6 +5,8 @@ import com.guagua.epoxytest.model.RemoteDataSource
 import com.guagua.epoxytest.model.VideoDataSource
 import com.guagua.epoxytest.model.VideoRepository
 import com.guagua.epoxytest.model.service.VideoService
+import com.guagua.epoxytest.ui.scheduler.SchedulerProvider
+import com.guagua.epoxytest.ui.scheduler.SchedulerProviderImpl
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -12,6 +14,7 @@ import dagger.hilt.android.components.ApplicationComponent
 import hu.akarnokd.rxjava3.retrofit.RxJava3CallAdapterFactory
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+import javax.inject.Singleton
 
 @Module
 @InstallIn(ApplicationComponent::class)
@@ -50,4 +53,8 @@ object AppModule {
             .addCallAdapterFactory(RxJava3CallAdapterFactory.create())
             .build()
     }
+
+    @Singleton
+    @Provides
+    fun provideSchedulerProvider(): SchedulerProvider = SchedulerProviderImpl()
 }
