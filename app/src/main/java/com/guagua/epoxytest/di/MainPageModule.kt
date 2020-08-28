@@ -1,6 +1,6 @@
 package com.guagua.epoxytest.di
 
-import com.guagua.epoxytest.ui.main.MainViewModel
+import com.guagua.epoxytest.ui.main.MainFragment
 import com.guagua.epoxytest.ui.main.list.ItemGroupController
 import dagger.Module
 import dagger.Provides
@@ -14,6 +14,6 @@ object MainPageModule {
 
     @FragmentScoped
     @Provides
-    fun provideItemGroupController(mainViewModel: MainViewModel): ItemGroupController =
-        ItemGroupController(mainViewModel)
+    fun provideItemGroupController(mainFragment: MainFragment): ItemGroupController =
+        ItemGroupController(mainFragment)
 }

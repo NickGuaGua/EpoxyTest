@@ -3,7 +3,6 @@ package com.guagua.epoxytest.di
 import com.guagua.epoxytest.model.LocalDataSource
 import com.guagua.epoxytest.model.RemoteDataSource
 import com.guagua.epoxytest.model.VideoDataSource
-import com.guagua.epoxytest.model.VideoRepository
 import com.guagua.epoxytest.model.service.VideoService
 import com.guagua.epoxytest.ui.scheduler.SchedulerProvider
 import com.guagua.epoxytest.ui.scheduler.SchedulerProviderImpl
@@ -35,14 +34,6 @@ object AppModule {
     @Provides
     fun provideVideoService(retrofit: Retrofit): VideoService {
         return retrofit.create(VideoService::class.java)
-    }
-
-    @Provides
-    fun provideVideoRepository(
-        @VideoLocalDataSource localDataSource: VideoDataSource,
-        @VideoRemoteDataSource remoteDataSource: VideoDataSource
-    ): VideoRepository {
-        return VideoRepository(localDataSource, remoteDataSource)
     }
 
     @Provides

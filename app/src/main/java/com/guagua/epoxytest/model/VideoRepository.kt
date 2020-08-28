@@ -1,9 +1,13 @@
 package com.guagua.epoxytest.model
 
+import com.guagua.epoxytest.di.VideoLocalDataSource
+import com.guagua.epoxytest.di.VideoRemoteDataSource
+import javax.inject.Inject
 
-class VideoRepository (
-    private val localDataSource: VideoDataSource,
-    private val remoteDataSource: VideoDataSource
+
+class VideoRepository @Inject constructor(
+    @VideoLocalDataSource private val localDataSource: VideoDataSource,
+    @VideoRemoteDataSource private val remoteDataSource: VideoDataSource
 ) {
 
     fun getCategoriesObservable() = remoteDataSource.getCategoriesObservable()

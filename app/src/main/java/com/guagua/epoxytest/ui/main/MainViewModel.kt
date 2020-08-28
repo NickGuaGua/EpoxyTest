@@ -9,19 +9,17 @@ import androidx.lifecycle.MutableLiveData
 import com.guagua.epoxytest.model.VideoRepository
 import com.guagua.epoxytest.model.data.Category
 import com.guagua.epoxytest.ui.extension.getSuccessBody
-import com.guagua.epoxytest.ui.main.list.ItemGroupController
 import com.guagua.epoxytest.ui.scheduler.SchedulerProvider
 import com.guagua.epoxytest.view.data.ListItem
 import io.reactivex.rxjava3.core.Observable
 import io.reactivex.rxjava3.disposables.CompositeDisposable
 import io.reactivex.rxjava3.disposables.Disposable
-import javax.inject.Inject
 
-class MainViewModel @ViewModelInject @Inject constructor(
+class MainViewModel @ViewModelInject constructor(
     application: Application,
     private val repository: VideoRepository,
     private val schedulerProvider: SchedulerProvider
-) : AndroidViewModel(application), ItemGroupController.AdapterCallbacks {
+) : AndroidViewModel(application) {
 
     private val _categories = MutableLiveData<List<Category>>()
     val categories: LiveData<List<Category>> = _categories
@@ -51,17 +49,13 @@ class MainViewModel @ViewModelInject @Inject constructor(
             }, {})
     }
 
-    override fun onListItemClick(item: ListItem) {
+    fun onListItemClick(item: ListItem) {
         Log.d("Nick", "on item click: $item")
     }
 
     override fun onCleared() {
         super.onCleared()
         compositeDisposable.dispose()
-    }
-
-    fun test() {
-        _categories.value = listOf(Category(2, ""))
     }
 
     private fun async(disposable: () -> Disposable) {
