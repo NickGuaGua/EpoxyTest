@@ -54,7 +54,7 @@ class MainViewModel @ViewModelInject constructor(
     }
 
     fun onSeeMoreClick(id: String, title: String) {
-
+        Log.d("Nick", "on see more click: id: $id, title: $title")
     }
 
     override fun onCleared() {

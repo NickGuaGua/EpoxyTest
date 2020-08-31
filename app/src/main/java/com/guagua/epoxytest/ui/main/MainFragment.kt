@@ -9,19 +9,19 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import com.guagua.epoxytest.R
 import com.guagua.epoxytest.ui.extension.toCarousel
-import com.guagua.epoxytest.ui.main.list.ItemGroupController
+import com.guagua.epoxytest.ui.main.list.HomePageController
 import com.guagua.epoxytest.view.data.ListItem
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.main_fragment.*
 import javax.inject.Inject
 
 @AndroidEntryPoint
-class MainFragment : Fragment(), ItemGroupController.AdapterCallbacks {
+class MainFragment : Fragment(), HomePageController.AdapterCallbacks {
 
     private val viewModel by viewModels<MainViewModel>()
 
     @Inject
-    lateinit var itemGroupController: ItemGroupController
+    lateinit var homePageController: HomePageController
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -33,12 +33,12 @@ class MainFragment : Fragment(), ItemGroupController.AdapterCallbacks {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        epoxyRecyclerView.setController(itemGroupController)
+        epoxyRecyclerView.setController(homePageController)
 
         viewModel.categories.observe(viewLifecycleOwner, Observer {
             it ?: return@Observer
 
-            itemGroupController.setData(it.map { category ->
+            homePageController.setData(it.map { category ->
                 category.toCarousel()
             })
         })

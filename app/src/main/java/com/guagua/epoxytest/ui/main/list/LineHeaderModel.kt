@@ -10,8 +10,8 @@ import com.airbnb.epoxy.EpoxyModelWithHolder
 import com.guagua.epoxytest.R
 
 
-@EpoxyModelClass(layout = R.layout.view_item_group)
-abstract class ItemGroupModel : EpoxyModelWithHolder<ItemGroupModel.Holder>() {
+@EpoxyModelClass(layout = R.layout.view_line_header)
+abstract class LineHeaderModel : EpoxyModelWithHolder<LineHeaderModel.Holder>() {
 
     @EpoxyAttribute
     lateinit var title: String
