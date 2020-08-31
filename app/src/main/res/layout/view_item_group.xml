@@ -4,16 +4,35 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:padding="16dp">
+    android:paddingStart="16dp"
+    android:layout_marginTop="8dp">
 
     <TextView
         android:id="@+id/title"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toTopOf="parent"
+        android:ellipsize="end"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/seeMoreBtn"
         app:layout_constraintStart_toStartOf="parent"
-        tools:text="熱門影片"/>
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="熱門影片" />
+
+    <Button
+        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+        android:id="@+id/seeMoreBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="see more"
+        android:textSize="12sp"
+        android:textColor="@android:color/background_dark"
+        app:icon="@drawable/ic_arrow_forward_24"
+        app:iconGravity="end"
+        app:iconSize="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

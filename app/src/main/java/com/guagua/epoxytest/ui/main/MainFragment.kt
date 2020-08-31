@@ -52,4 +52,8 @@ class MainFragment : Fragment(), ItemGroupController.AdapterCallbacks {
     override fun onListItemClick(item: ListItem) {
         viewModel.onListItemClick(item)
     }
+
+    override fun onSeeMoreClickListener(groupId: String, groupTitle: String) {
+        viewModel.onSeeMoreClick(groupId, groupTitle)
+    }
 }

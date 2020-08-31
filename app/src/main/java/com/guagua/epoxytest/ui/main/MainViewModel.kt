@@ -53,6 +53,10 @@ class MainViewModel @ViewModelInject constructor(
         Log.d("Nick", "on item click: $item")
     }
 
+    fun onSeeMoreClick(id: String, title: String) {
+
+    }
+
     override fun onCleared() {
         super.onCleared()
         compositeDisposable.dispose()
